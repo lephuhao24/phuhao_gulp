@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1010px){
+    .nav-pc {
+        display: none !important;
+    }
+
+    .nav-mobile{
+        * {
+            font-size: 180%;
+        }
+        .container {
+            position: relative;
+            height: 5em;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            margin: 0 1.5em;
+            .icon {
+                cursor: pointer;
+                width: fit-content;
+                height: fit-content;
+                .nut2 {
+                    content: 'X';
+                }
+            }
+        }
+        .menu-logo{
+            top: 35%;
+            right: .5em;
+            vertical-align: middle;
+            position: absolute;
+            font-size: 60px;
+        }
+        .img-logo {
+            top: 0em;
+            left: 1em;
+            vertical-align: middle;
+        }
+        ul.menu-btn{
+            display: block;
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+            top:2.5em;
+            right: 2em;
+            transition: .4s all;
+            li {
+                display: block;
+                text-align: right;
+                border-bottom: 1px solid darkgray;
+                font-size: 79px;
+                width: 8em;
+                a.link-page {
+                    font-size: inherit;
+                    color: black;
+                    text-decoration: none;
+                    display: block;
+                    position: relative;
+                }
+                ul.sub_page {
+                    top: 0;
+                    right: 1em;
+                    font-size: inherit;
+                    display: block;
+                    position: relative;
+                    height: 0;
+                    transition: .4s all ease;
+                    overflow: hidden;
+                    li {
+                        font-size: inherit;
+                        z-index: 2;
+                    }
+                }
+                &.active {
+                    > ul.sub_page {
+                        height: fit-content;
+                    }
+                }
+            }
+            &.active {
+                opacity: 1;
+                margin: 0;
+                background-color: $bg-nav;
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                top:2.5em;
+                right: 0px;
+                display: block;
+                transition: .4s all;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: $bg-nav;
+    z-index: 999;
+}
+
+.nav-pc {
+    padding-top: 20px;
+    margin: auto;
+    font-family: sans-serif;
+    .row-single {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .nav-logo {
+            display: flex;
+            height: 1.5em;
+            margin-right: 5em;
+            .logo-img {
+                height: 100%;
+            }
+        }
+        height: 50px;
+        .nav-menu {
+            height: 5em;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            ul{
+                li {
+                    list-style: none;
+                    float: left;
+                    margin: 0 1em;
+                    line-height: 3em;
+                    color: $nav-text;
+                    display: block;
+                }
+                li.page {
+                    height: fit-content;
+                    position: relative;
+                    &:hover {
+                        > ul.sub_page {
+                            height: fit-content;
+                        }
+                    }
+                    ul.sub_page {
+                        height: 0;
+                        display: block;
+                        position: absolute;
+                        top: 3em;
+                        left: 0;
+                        width: 10em;
+                        background: $bg-nav;
+                        border-radius: .5em;
+                        overflow: hidden;
+                        transition: .4s all ease;
+                        li{
+                            width: 8em;
+                            padding: 0 1em;
+                            position: relative;
+                            ul {
+                                position: relative;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    
+}

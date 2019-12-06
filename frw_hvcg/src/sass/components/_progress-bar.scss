@@ -1,0 +1,30 @@
+.bar{
+    width: $barwidth;
+    display: block;
+    position: relative;
+    padding: 0;
+    border: .1em rgb(180, 255, 180) solid;
+    border-radius: 1em;
+    &:before {
+        position: absolute;
+        top: -.35em;
+        display: block;
+        content: "";
+        background: green;
+        border-radius: 2em;
+        width: .7em;
+        height: .7em;
+        animation-name: run;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes run{
+            from {
+                left: 0em;
+            }
+            to {
+                left: $barwidth;
+            }
+        }
+    }
+}

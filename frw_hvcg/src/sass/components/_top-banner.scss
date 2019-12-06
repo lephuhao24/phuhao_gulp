@@ -1,0 +1,84 @@
+.top-banner {
+    width: 100%;
+    display: block;
+    color: $text-color;
+    .row-1 {
+        margin: auto;
+        height: 40rem;
+        width: 90em;
+        position: relative;
+        .col-1 {
+            position: absolute;
+            top: 8rem;
+            left: 10rem;
+            vertical-align: top;
+            width: 35rem;
+            display: inline-block;
+            h3 {
+                font-size: 45px;
+                line-height: 4rem;
+                margin-bottom: 1.5rem;
+            }
+            .ctn-btn {
+                margin-top: 2rem;
+                transform: translateX(-2rem);
+            }
+        }
+        .col-2 {
+            position: absolute;
+            top: 0;
+            right:0;
+            width: 50%;
+            display: inline-block;
+        }
+    }
+    .row-2 {
+        height: 20em;
+        width: 70em;
+        justify-content: space-around;
+        margin: auto;
+        display: flex;
+        .block {
+            width: 12em;
+            border: 1px dashed gray;
+            border-radius: .2em;
+            padding: 1em;
+            box-shadow: 1em 1em 1em 1em black outset;
+            position: relative;
+            z-index: 10;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background-image: $bg-gradient;
+                transform: translateY(-1em);
+            }
+            h4 {
+                margin: 1em 0;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+            i {
+                padding: 1em;
+                margin: 1em;
+                border-radius: 2em;
+                &.fa-handshake{
+                    background-color: rgb(178, 230, 178);
+                    color: rgb(57, 136, 57)
+                }
+                &.fa-code{
+                    background-color: rgb(252, 173, 173);
+                    color: rgb(189, 54, 54);
+                }
+                &.fa-users{
+                    background-color: rgb(247, 181, 247);
+                    color: rgb(102, 70, 102);
+                }
+                &.fa-ravelry{
+                    background-color: rgb(252, 206, 189);
+                    color: rgb(202, 102, 66);
+                }
+
+                
+            }
+        }
+    }
+}

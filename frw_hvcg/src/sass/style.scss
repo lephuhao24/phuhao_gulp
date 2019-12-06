@@ -1,0 +1,30 @@
+@import './components/color';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background: white;
+    font-family: 'poppins', sans-serif;
+} 
+
+.container {
+    width: 100%;
+}
+.top-5 {
+    margin-top: 5em;
+}
+
+@import './components/button';
+@import './components/nav';
+@import './components/top-banner';
+@import './components/cloud-hosting';
+@import './components/design-development';
+@import './components/progress-bar'
