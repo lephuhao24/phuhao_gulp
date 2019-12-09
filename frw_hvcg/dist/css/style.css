@@ -96,76 +96,77 @@ body {
 @media only screen and (max-width: 1010px) {
   .nav-pc {
     display: none !important; }
-  .nav-mobile * {
-    font-size: 180%; }
-  .nav-mobile .container {
-    position: relative;
-    height: 5em;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    margin: 0 1.5em; }
-    .nav-mobile .container .icon {
-      cursor: pointer;
-      width: fit-content;
-      height: fit-content; }
-      .nav-mobile .container .icon .nut2 {
-        content: 'X'; }
-  .nav-mobile .menu-logo {
-    top: 35%;
-    right: .5em;
-    vertical-align: middle;
-    position: absolute;
-    font-size: 60px; }
-  .nav-mobile .img-logo {
-    top: 0em;
-    left: 1em;
-    vertical-align: middle; }
-  .nav-mobile ul.menu-btn {
-    display: block;
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    top: 2.5em;
-    right: 2em;
-    transition: .4s all; }
-    .nav-mobile ul.menu-btn li {
-      display: block;
-      text-align: right;
-      border-bottom: 1px solid darkgray;
-      font-size: 79px;
-      width: 8em; }
-      .nav-mobile ul.menu-btn li a.link-page {
-        font-size: inherit;
-        color: black;
-        text-decoration: none;
-        display: block;
-        position: relative; }
-      .nav-mobile ul.menu-btn li ul.sub_page {
-        top: 0;
-        right: 1em;
-        font-size: inherit;
-        display: block;
-        position: relative;
-        height: 0;
-        transition: .4s all ease;
-        overflow: hidden; }
-        .nav-mobile ul.menu-btn li ul.sub_page li {
-          font-size: inherit;
-          z-index: 2; }
-      .nav-mobile ul.menu-btn li.active > ul.sub_page {
+  .nav-mobile {
+    width: 100vw; }
+    .nav-mobile .container {
+      position: relative;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      margin: 0; }
+      .nav-mobile .container .img-logo {
+        width: 12em;
+        top: 0em;
+        left: 0em;
+        vertical-align: middle; }
+      .nav-mobile .container .icon {
+        cursor: pointer;
+        width: fit-content;
         height: fit-content; }
-    .nav-mobile ul.menu-btn.active {
-      opacity: 1;
-      margin: 0;
-      background-color: white;
-      width: fit-content;
-      height: fit-content;
-      position: absolute;
-      top: 2.5em;
-      right: 0px;
-      display: block;
-      transition: .4s all; } }
+        .nav-mobile .container .icon .nut2 {
+          content: 'X'; }
+        .nav-mobile .container .icon .menu-logo {
+          top: 35%;
+          right: .5em;
+          vertical-align: middle;
+          position: absolute;
+          font-size: 60px; }
+      .nav-mobile .container ul.menu-btn {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        top: 2.5em;
+        right: 2em;
+        transition: .4s all; }
+        .nav-mobile .container ul.menu-btn li {
+          display: block;
+          text-align: right;
+          border-bottom: 1px solid darkgray;
+          font-size: 79px;
+          width: 8em; }
+          .nav-mobile .container ul.menu-btn li a.link-page {
+            font-size: inherit;
+            color: black;
+            text-decoration: none;
+            display: block;
+            position: relative; }
+          .nav-mobile .container ul.menu-btn li ul.sub_page {
+            top: 0;
+            right: 1em;
+            font-size: inherit;
+            display: block;
+            position: relative;
+            height: 0;
+            transition: .4s all ease;
+            overflow: hidden; }
+            .nav-mobile .container ul.menu-btn li ul.sub_page li {
+              font-size: inherit;
+              z-index: 2; }
+          .nav-mobile .container ul.menu-btn li.active > ul.sub_page {
+            height: fit-content; }
+        .nav-mobile .container ul.menu-btn.active {
+          opacity: 1;
+          margin: 0;
+          background-color: white;
+          width: fit-content;
+          height: fit-content;
+          position: absolute;
+          top: 2.5em;
+          right: 0px;
+          display: block;
+          transition: .4s all; } }
 
 @media only screen and (min-width: 1010px) {
   .nav-mobile {
@@ -274,7 +275,8 @@ nav.nav {
       box-shadow: 1em 1em 1em 1em black outset;
       position: relative;
       z-index: 10;
-      transition: all .2s ease-in-out; }
+      transition: all .2s ease-in-out;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
       .top-banner .row-2 .block:hover {
         background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%);
         transform: translateY(-1em); }
@@ -300,85 +302,88 @@ nav.nav {
           color: #ca6642; }
 
 .cloud-hosting {
-  margin-top: 4em;
-  background-color: #eeeeee;
-  text-align: center;
-  width: 100%;
-  height: 30rem;
-  position: relative;
-  display: block;
-  color: #666666;
-  overflow: hidden; }
-  .cloud-hosting .col-1 {
-    text-align: left;
-    position: absolute;
-    top: 3rem;
-    left: 12rem;
-    vertical-align: top;
-    width: 35rem;
-    display: inline-block; }
-    .cloud-hosting .col-1 h3 {
-      font-size: 25px; }
-    .cloud-hosting .col-1 .bar {
-      width: 7em;
-      display: block;
-      position: relative;
-      padding: 0;
-      border: 0.1em #b4ffb4 solid;
-      border-radius: 1em; }
-      .cloud-hosting .col-1 .bar:before {
-        position: absolute;
-        top: -.35em;
+  background-color: #eeeeee; }
+  .cloud-hosting .container {
+    margin: auto;
+    margin-top: 4em;
+    text-align: center;
+    width: 80em;
+    height: 30rem;
+    position: relative;
+    display: block;
+    color: #666666;
+    overflow: hidden; }
+    .cloud-hosting .container .col-1 {
+      text-align: left;
+      position: absolute;
+      top: 3rem;
+      left: 5rem;
+      vertical-align: top;
+      width: 35rem;
+      display: inline-block; }
+      .cloud-hosting .container .col-1 h3 {
+        font-size: 25px; }
+      .cloud-hosting .container .col-1 .bar {
+        width: 7em;
         display: block;
-        content: "";
-        background: green;
-        border-radius: 2em;
-        width: .7em;
-        height: .7em;
-        animation-name: run;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; }
+        position: relative;
+        padding: 0;
+        border: 0.1em #b4ffb4 solid;
+        border-radius: 1em; }
+        .cloud-hosting .container .col-1 .bar:before {
+          position: absolute;
+          top: -.35em;
+          display: block;
+          content: "";
+          background: green;
+          border-radius: 2em;
+          width: .7em;
+          height: .7em;
+          animation-name: run;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
 
 @keyframes run {
   from {
     left: 0em; }
   to {
     left: 7em; } }
-    .cloud-hosting .col-1 .feature {
-      width: 27em;
-      display: block; }
-      .cloud-hosting .col-1 .feature i {
-        display: inline-block;
-        border-radius: .4em;
-        width: 10em;
-        padding: 1em;
-        background-color: white;
-        margin: .5em;
-        transition: all .4s ease; }
-        .cloud-hosting .col-1 .feature i span {
-          font-weight: normal;
-          margin-left: .5em; }
-        .cloud-hosting .col-1 .feature i:hover {
-          transform: translateY(-0.5em);
-          background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
-  .cloud-hosting .col-2 {
-    position: absolute;
-    top: 3em;
-    right: 0;
-    width: 50%;
-    display: inline-block;
-    height: 100%; }
-    .cloud-hosting .col-2 .circle {
-      width: 30em;
+      .cloud-hosting .container .col-1 .feature {
+        width: 27em;
+        display: block; }
+        .cloud-hosting .container .col-1 .feature i {
+          display: inline-block;
+          border-radius: .4em;
+          width: 10em;
+          padding: 1em;
+          background-color: white;
+          margin: .5em;
+          transition: all .4s ease;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+          .cloud-hosting .container .col-1 .feature i span {
+            font-weight: normal;
+            margin-left: .5em; }
+          .cloud-hosting .container .col-1 .feature i:hover {
+            transform: translateY(-0.5em);
+            background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
+    .cloud-hosting .container .col-2 {
       position: absolute;
-      top: -3em;
-      left: 10em;
-      animation-timing-function: linear;
-      animation-name: circle;
-      animation-iteration-count: infinite;
-      animation-duration: 15s;
-      overflow: hidden; }
+      top: 3em;
+      right: 0;
+      width: 50%;
+      display: inline-block;
+      height: 100%; }
+      .cloud-hosting .container .col-2 .circle {
+        width: 30em;
+        position: absolute;
+        top: -3em;
+        left: 5em;
+        animation-timing-function: linear;
+        animation-name: circle;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        overflow: hidden; }
 
 @keyframes circle {
   from {
@@ -387,9 +392,10 @@ nav.nav {
     transform: rotate(360deg); } }
 
 .design-development {
+  margin: auto;
   background-color: white;
   text-align: center;
-  width: 100%;
+  width: 80em;
   height: 30rem;
   position: relative;
   display: block;
@@ -406,7 +412,7 @@ nav.nav {
       width: 30em;
       position: absolute;
       top: -3em;
-      left: 10em;
+      left: 6em;
       animation-timing-function: linear;
       animation-name: circle;
       animation-iteration-count: infinite;
@@ -422,7 +428,7 @@ nav.nav {
     text-align: left;
     position: absolute;
     top: 3rem;
-    right: 12rem;
+    left: 45rem;
     vertical-align: top;
     width: 35rem;
     display: inline-block; }
@@ -464,7 +470,8 @@ nav.nav {
         padding: 1em;
         background-color: white;
         margin: .5em;
-        transition: all .4s ease; }
+        transition: all .4s ease;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
         .design-development .col-2 .feature i span {
           font-weight: normal;
           margin-left: .5em; }
@@ -503,11 +510,11 @@ nav.nav {
   background-color: #eeeeee;
   height: 50em;
   text-align: center; }
-  .our-feature h3 {
+  .our-feature > h3 {
     padding-top: 2em;
     font-size: 30px;
     font-weight: bold !important; }
-  .our-feature p {
+  .our-feature > p {
     margin: auto;
     text-align: center;
     width: 40em; }
@@ -515,7 +522,41 @@ nav.nav {
     margin: 2em auto; }
   .our-feature .cards {
     width: 80em;
-    display: inline-block;
-    margin: auto; }
+    display: block;
+    margin: auto;
+    align-items: center; }
     .our-feature .cards .card {
-      width: 30em; }
+      width: 30em;
+      display: inline-flex;
+      margin: 1em;
+      padding: 1em;
+      background-color: white; }
+      .our-feature .cards .card .icon i {
+        margin-right: 1em;
+        padding: 1.5em;
+        vertical-align: middle;
+        border-radius: 2em; }
+        .our-feature .cards .card .icon i.fa-cog {
+          background-color: #cdf1d8;
+          color: #44ce6f; }
+        .our-feature .cards .card .icon i.fa-envelope {
+          background-color: #cdf1d8;
+          color: #44ce6f; }
+        .our-feature .cards .card .icon i.fa-th-large {
+          background-color: #edc3fc;
+          color: #c679e3; }
+        .our-feature .cards .card .icon i.fa-question-circle {
+          background-color: #edc3fc;
+          color: #c679e3; }
+        .our-feature .cards .card .icon i.fa-mouse-pointer {
+          background-color: #f9d2c4;
+          color: #eb6b3d; }
+        .our-feature .cards .card .icon i.fa-bell {
+          background-color: #f9d2c4;
+          color: #eb6b3d; }
+      .our-feature .cards .card .text {
+        text-align: left; }
+        .our-feature .cards .card .text span {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 1em; }
