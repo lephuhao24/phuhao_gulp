@@ -1,0 +1,19 @@
+.our-feature {
+  height: 50em;
+  text-align: center; }
+  .our-feature h3 {
+    padding-top: 2em;
+    font-size: 30px;
+    font-weight: bold !important; }
+  .our-feature p {
+    margin: auto;
+    text-align: center;
+    width: 40em; }
+  .our-feature .bar {
+    margin: 2em auto; }
+  .our-feature .cards {
+    width: 80em;
+    display: inline-block;
+    margin: auto; }
+    .our-feature .cards .card {
+      width: 30em; }

@@ -1,0 +1,28 @@
+.our-feature {
+    background-color: $bg-grey;
+    height: 50em;
+    text-align: center;
+    h3 {
+        padding-top: 2em;
+        font-size: 30px;
+        font-weight: bold !important;
+    }
+    p {
+        margin: auto;
+        text-align: center;
+        width: 40em;
+    }
+    .bar {
+        margin:2em auto;
+    }
+
+    .cards {
+        width: 80em;
+        display: inline-block;
+        margin: auto;
+        
+        .card {
+            width: 30em;
+        }
+    }
+}
