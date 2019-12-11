@@ -3,16 +3,17 @@
     display: block;
     color: $text-color;
     .row-1 {
+        display: block;
         margin: auto;
-        height: 40rem;
-        width: 90em;
+        height: 80vh;
+        width: 80vw;
         position: relative;
         .col-1 {
             position: absolute;
             top: 8rem;
-            left: 10rem;
+            left: 3vw;
             vertical-align: top;
-            width: 35rem;
+            width: 30vw;
             display: inline-block;
             h3 {
                 font-size: 45px;
@@ -27,9 +28,12 @@
         .col-2 {
             position: absolute;
             top: 0;
-            right:0;
-            width: 50%;
+            left: 45vw;
+            width: 50vw;
             display: inline-block;
+            img {
+                width: 70%;
+            }
         }
     }
     .row-2 {
@@ -76,9 +80,133 @@
                 &.fa-ravelry{
                     background-color: rgb(252, 206, 189);
                     color: rgb(202, 102, 66);
-                }
+                }                
+            }
+        }
+    }
+}
 
-                
+@media only screen and (max-width: 1200px) and (min-width: 750px){
+    .top-banner {
+        .row-1 {
+            display: block;
+            margin: auto;
+            height: 100vh;
+            width: 80vw;
+            position: relative;
+            .col-1 {
+                height: 100vh;
+                top: 8rem;
+                left: 5vw;
+                vertical-align: top;
+                display: inline-block;
+                h3 {
+                    font-size: 45px;
+                    line-height: 4rem;
+                    margin-bottom: 1.5rem;
+                }
+                .ctn-btn {
+                    margin-top: 2rem;
+                    transform: translateX(-2rem);
+                }
+            }
+            .col-2 {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-banner {
+        .row-2 {
+            height: fit-content;
+            width: 90vw;
+            justify-content: space-around;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .block {
+                margin-top: 2em;
+                width: 12em;
+                border: 1px dashed gray;
+                border-radius: .2em;
+                padding: 1em;
+                box-shadow: 1em 1em 1em 1em black outset;
+                position: relative;
+                z-index: 10;
+                transition: all .2s ease-in-out;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                &:hover {
+                    background-image: $bg-gradient;
+                    transform: translateY(-1em);
+                }
+                h4 {
+                    margin: 1em 0;
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+                i {
+                    padding: 1em;
+                    margin: 1em;
+                    border-radius: 2em;
+                    &.fa-handshake{
+                        background-color: rgb(178, 230, 178);
+                        color: rgb(57, 136, 57)
+                    }
+                    &.fa-code{
+                        background-color: rgb(252, 173, 173);
+                        color: rgb(189, 54, 54);
+                    }
+                    &.fa-users{
+                        background-color: rgb(247, 181, 247);
+                        color: rgb(102, 70, 102);
+                    }
+                    &.fa-ravelry{
+                        background-color: rgb(252, 206, 189);
+                        color: rgb(202, 102, 66);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 750px){
+    .top-banner {
+        .row-1 {
+            display: block;
+            margin: auto;
+            height: fit-content;
+            width: 80vw;
+            .col-1 {
+                margin: auto;
+                position: static;
+                height: fit-content;
+                top: 8rem;
+                left: 5vw;
+                width: 80vw;
+                display: block;
+                h3 {
+                    font-size: 45px;
+                    line-height: 4rem;
+                    margin-bottom: 1.5rem;
+                }
+                .ctn-btn {
+                    margin-top: 2rem;
+                    transform: translateX(-2rem);
+                }
+            }
+            .col-2 {
+                position: static;
+                width: 90vw;
+                margin: 2em 0;
+                img {
+                    width: 90%;
+                }
             }
         }
     }

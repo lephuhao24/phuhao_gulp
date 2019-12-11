@@ -39,7 +39,7 @@
                 opacity: 0;
                 overflow: hidden;
                 top: 4em;
-                right: 2em;
+                transform: translateX(-100%);
                 transition: .4s all;
                 li {
                     display: block;
@@ -76,6 +76,7 @@
                 }
                 &.active {
                     opacity: 1;
+                    transform: translateX(0%);
                     margin: 0;
                     background-color: $bg-nav;
                     width: fit-content;

@@ -22,8 +22,44 @@ $(window).scroll(function() {
 $(document).ready(function(){
     $('.cards-team').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        adaptiveHeight: true
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     })
 })

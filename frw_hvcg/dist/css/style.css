@@ -128,7 +128,7 @@ body {
         opacity: 0;
         overflow: hidden;
         top: 4em;
-        right: 2em;
+        transform: translateX(-100%);
         transition: .4s all; }
         .nav-mobile .container ul.menu-btn li {
           display: block;
@@ -158,6 +158,7 @@ body {
             height: fit-content; }
         .nav-mobile .container ul.menu-btn.active {
           opacity: 1;
+          transform: translateX(0%);
           margin: 0;
           background-color: white;
           width: fit-content;
@@ -237,16 +238,17 @@ nav.nav {
   display: block;
   color: #666666; }
   .top-banner .row-1 {
+    display: block;
     margin: auto;
-    height: 40rem;
-    width: 90em;
+    height: 80vh;
+    width: 80vw;
     position: relative; }
     .top-banner .row-1 .col-1 {
       position: absolute;
       top: 8rem;
-      left: 10rem;
+      left: 3vw;
       vertical-align: top;
-      width: 35rem;
+      width: 30vw;
       display: inline-block; }
       .top-banner .row-1 .col-1 h3 {
         font-size: 45px;
@@ -258,9 +260,11 @@ nav.nav {
     .top-banner .row-1 .col-2 {
       position: absolute;
       top: 0;
-      right: 0;
-      width: 50%;
+      left: 45vw;
+      width: 50vw;
       display: inline-block; }
+      .top-banner .row-1 .col-2 img {
+        width: 70%; }
   .top-banner .row-2 {
     height: 20em;
     width: 70em;
@@ -300,6 +304,100 @@ nav.nav {
         .top-banner .row-2 .block i.fa-ravelry {
           background-color: #fccebd;
           color: #ca6642; }
+
+@media only screen and (max-width: 1200px) and (min-width: 750px) {
+  .top-banner .row-1 {
+    display: block;
+    margin: auto;
+    height: 100vh;
+    width: 80vw;
+    position: relative; }
+    .top-banner .row-1 .col-1 {
+      height: 100vh;
+      top: 8rem;
+      left: 5vw;
+      vertical-align: top;
+      display: inline-block; }
+      .top-banner .row-1 .col-1 h3 {
+        font-size: 45px;
+        line-height: 4rem;
+        margin-bottom: 1.5rem; }
+      .top-banner .row-1 .col-1 .ctn-btn {
+        margin-top: 2rem;
+        transform: translateX(-2rem); }
+    .top-banner .row-1 .col-2 img {
+      width: 90%; } }
+
+@media only screen and (max-width: 1100px) {
+  .top-banner .row-2 {
+    height: fit-content;
+    width: 90vw;
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; }
+    .top-banner .row-2 .block {
+      margin-top: 2em;
+      width: 12em;
+      border: 1px dashed gray;
+      border-radius: .2em;
+      padding: 1em;
+      box-shadow: 1em 1em 1em 1em black outset;
+      position: relative;
+      z-index: 10;
+      transition: all .2s ease-in-out;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+      .top-banner .row-2 .block:hover {
+        background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%);
+        transform: translateY(-1em); }
+      .top-banner .row-2 .block h4 {
+        margin: 1em 0;
+        font-size: 18px;
+        font-weight: bolder; }
+      .top-banner .row-2 .block i {
+        padding: 1em;
+        margin: 1em;
+        border-radius: 2em; }
+        .top-banner .row-2 .block i.fa-handshake {
+          background-color: #b2e6b2;
+          color: #398839; }
+        .top-banner .row-2 .block i.fa-code {
+          background-color: #fcadad;
+          color: #bd3636; }
+        .top-banner .row-2 .block i.fa-users {
+          background-color: #f7b5f7;
+          color: #664666; }
+        .top-banner .row-2 .block i.fa-ravelry {
+          background-color: #fccebd;
+          color: #ca6642; } }
+
+@media only screen and (max-width: 750px) {
+  .top-banner .row-1 {
+    display: block;
+    margin: auto;
+    height: fit-content;
+    width: 80vw; }
+    .top-banner .row-1 .col-1 {
+      margin: auto;
+      position: static;
+      height: fit-content;
+      top: 8rem;
+      left: 5vw;
+      width: 80vw;
+      display: block; }
+      .top-banner .row-1 .col-1 h3 {
+        font-size: 45px;
+        line-height: 4rem;
+        margin-bottom: 1.5rem; }
+      .top-banner .row-1 .col-1 .ctn-btn {
+        margin-top: 2rem;
+        transform: translateX(-2rem); }
+    .top-banner .row-1 .col-2 {
+      position: static;
+      width: 90vw;
+      margin: 2em 0; }
+      .top-banner .row-1 .col-2 img {
+        width: 90%; } }
 
 .cloud-hosting {
   background-color: #eeeeee; }
@@ -578,7 +676,7 @@ nav.nav {
   .our-team > p {
     margin: auto;
     text-align: center;
-    width: 40em; }
+    width: 80vw; }
   .our-team .bar {
     margin: 2em auto; }
   .our-team .cards-team {
@@ -592,5 +690,48 @@ nav.nav {
       .our-team .cards-team .card .thumbnail {
         margin: 2em auto;
         border-radius: 5em; }
-      .our-team .cards-team .card .btn-group .btn {
-        display: inline-block; }
+      .our-team .cards-team .card .btn-group {
+        margin: .5em auto;
+        display: flex;
+        width: 50%;
+        justify-content: space-between; }
+        .our-team .cards-team .card .btn-group .btn {
+          display: inline-block;
+          color: #c679e3;
+          width: 1.5em;
+          height: 1.5em;
+          box-sizing: border-box;
+          padding: .3em;
+          border: 1px solid #c679e3;
+          border-radius: 2em;
+          transition: all .4s ease; }
+          .our-team .cards-team .card .btn-group .btn i {
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .our-team .cards-team .card .btn-group .btn:hover {
+            transform: translateY(-0.2em);
+            border: 1px solid #44ce6f;
+            color: #44ce6f; }
+    .our-team .cards-team .slick-dots {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 5em; }
+      .our-team .cards-team .slick-dots li {
+        list-style: none;
+        margin: .3em; }
+        .our-team .cards-team .slick-dots li button {
+          visibility: hidden; }
+          .our-team .cards-team .slick-dots li button:after {
+            content: ' ';
+            background-color: #44ce6f;
+            opacity: 0.5;
+            border-radius: 1em;
+            width: 1em;
+            height: .5em;
+            display: block;
+            visibility: visible; }
+        .our-team .cards-team .slick-dots li.slick-active button:after {
+          opacity: 1; }
