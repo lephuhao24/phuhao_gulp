@@ -18,3 +18,11 @@ $(window).scroll(function () {
     $('.nav').css('position', 'fixed');
   }
 });
+$(document).ready(function () {
+  $('.cards-team').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    adaptiveHeight: true
+  });
+});

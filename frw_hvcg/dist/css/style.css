@@ -97,7 +97,8 @@ body {
   .nav-pc {
     display: none !important; }
   .nav-mobile {
-    width: 100vw; }
+    width: 100vw;
+    height: 3em; }
     .nav-mobile .container {
       position: relative;
       width: 100%;
@@ -106,9 +107,8 @@ body {
       display: flex;
       margin: 0; }
       .nav-mobile .container .img-logo {
-        width: 12em;
-        top: 0em;
-        left: 0em;
+        width: 20em;
+        padding: 1em;
         vertical-align: middle; }
       .nav-mobile .container .icon {
         cursor: pointer;
@@ -117,7 +117,7 @@ body {
         .nav-mobile .container .icon .nut2 {
           content: 'X'; }
         .nav-mobile .container .icon .menu-logo {
-          top: 35%;
+          top: .2em;
           right: .5em;
           vertical-align: middle;
           position: absolute;
@@ -127,7 +127,7 @@ body {
         position: absolute;
         opacity: 0;
         overflow: hidden;
-        top: 2.5em;
+        top: 4em;
         right: 2em;
         transition: .4s all; }
         .nav-mobile .container ul.menu-btn li {
@@ -163,7 +163,7 @@ body {
           width: fit-content;
           height: fit-content;
           position: absolute;
-          top: 2.5em;
+          top: 4em;
           right: 0px;
           display: block;
           transition: .4s all; } }
@@ -530,7 +530,8 @@ nav.nav {
       display: inline-flex;
       margin: 1em;
       padding: 1em;
-      background-color: white; }
+      background-color: white;
+      transition: .4s; }
       .our-feature .cards .card .icon i {
         margin-right: 1em;
         padding: 1.5em;
@@ -556,7 +557,40 @@ nav.nav {
           color: #eb6b3d; }
       .our-feature .cards .card .text {
         text-align: left; }
-        .our-feature .cards .card .text span {
+        .our-feature .cards .card .text p.bold {
           font-size: 18px;
-          font-weight: 500;
-          margin-bottom: 1em; }
+          font-weight: 700;
+          margin-bottom: 1em;
+          color: black; }
+        .our-feature .cards .card .text p {
+          color: #666666; }
+      .our-feature .cards .card:hover {
+        transform: translateY(-1em); }
+
+.our-team {
+  height: 50em;
+  text-align: center;
+  background-color: #f9f6f6; }
+  .our-team > h3 {
+    padding-top: 2em;
+    font-size: 30px;
+    font-weight: bold !important; }
+  .our-team > p {
+    margin: auto;
+    text-align: center;
+    width: 40em; }
+  .our-team .bar {
+    margin: 2em auto; }
+  .our-team .cards-team {
+    width: 100%; }
+    .our-team .cards-team .card {
+      max-width: 25%;
+      height: 25em;
+      margin: 1em;
+      display: inline-block;
+      background-color: white; }
+      .our-team .cards-team .card .thumbnail {
+        margin: 2em auto;
+        border-radius: 5em; }
+      .our-team .cards-team .card .btn-group .btn {
+        display: inline-block; }

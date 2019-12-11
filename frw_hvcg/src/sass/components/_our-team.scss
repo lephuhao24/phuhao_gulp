@@ -1,0 +1,38 @@
+.our-team {
+    height: 50em;
+    text-align: center;
+    background-color: $bg-pink;
+    > h3 {
+        padding-top: 2em;
+        font-size: 30px;
+        font-weight: bold !important;
+    }
+    > p {
+        margin: auto;
+        text-align: center;
+        width: 40em;
+    }
+    .bar {
+        margin:2em auto;
+    }
+
+    .cards-team {
+        width: 100%;
+        .card {
+            max-width: 25%;
+            height: 25em;
+            margin: 1em;
+            display: inline-block;
+            background-color: white;
+            .thumbnail {
+                margin: 2em auto;
+                border-radius: 5em;
+            }
+            .btn-group {
+                .btn {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

@@ -27,6 +27,7 @@
             margin: 1em;
             padding: 1em;
             background-color: white;
+            transition: .4s;
             .icon {
                 i {
                     margin-right: 1em;
@@ -62,11 +63,18 @@
             }
             .text {
                 text-align: left;
-                span {
+                p.bold {
                     font-size: 18px;
-                    font-weight: 500;
+                    font-weight: 700;
                     margin-bottom: 1em;
+                    color: black;
                 }
+                p {
+                    color: $text-color;
+                }
+            }
+            &:hover {
+                transform: translateY(-1em);
             }
         }
     }
