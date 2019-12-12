@@ -415,9 +415,9 @@ nav.nav {
       text-align: left;
       position: absolute;
       top: 3rem;
-      left: 5rem;
+      left: 3vw;
       vertical-align: top;
-      width: 35rem;
+      width: 30vw;
       display: inline-block; }
       .cloud-hosting .container .col-1 h3 {
         font-size: 25px; }
@@ -430,13 +430,13 @@ nav.nav {
         border-radius: 1em; }
         .cloud-hosting .container .col-1 .bar:before {
           position: absolute;
-          top: -.35em;
+          top: -0.35em;
           display: block;
           content: "";
           background: green;
           border-radius: 2em;
-          width: .7em;
-          height: .7em;
+          width: 0.7em;
+          height: 0.7em;
           animation-name: run;
           animation-duration: 7s;
           animation-iteration-count: infinite;
@@ -448,20 +448,20 @@ nav.nav {
   to {
     left: 7em; } }
       .cloud-hosting .container .col-1 .feature {
-        width: 27em;
+        width: 100%;
         display: block; }
         .cloud-hosting .container .col-1 .feature i {
           display: inline-block;
-          border-radius: .4em;
+          border-radius: 0.4em;
           width: 10em;
           padding: 1em;
           background-color: white;
-          margin: .5em;
-          transition: all .4s ease;
+          margin: 0.5em;
+          transition: all 0.4s ease;
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
           .cloud-hosting .container .col-1 .feature i span {
             font-weight: normal;
-            margin-left: .5em; }
+            margin-left: 0.5em; }
           .cloud-hosting .container .col-1 .feature i:hover {
             transform: translateY(-0.5em);
             background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
@@ -488,6 +488,97 @@ nav.nav {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+@media only screen and (max-width: 1000px) {
+  .cloud-hosting {
+    background-color: #eeeeee; }
+    .cloud-hosting .container {
+      margin: auto;
+      margin-top: 4em;
+      text-align: center;
+      width: 100vw;
+      display: block;
+      color: #666666;
+      overflow: hidden;
+      height: fit-content; }
+      .cloud-hosting .container .col-1 {
+        position: static;
+        align-items: center;
+        margin: 3em auto;
+        text-align: left;
+        width: 80vw;
+        display: block;
+        height: fit-content; }
+        .cloud-hosting .container .col-1 h3 {
+          font-size: 25px; }
+        .cloud-hosting .container .col-1 .bar {
+          width: 7em;
+          display: block;
+          position: relative;
+          padding: 0;
+          border: 0.1em #b4ffb4 solid;
+          border-radius: 1em; }
+          .cloud-hosting .container .col-1 .bar:before {
+            position: absolute;
+            top: -0.35em;
+            display: block;
+            content: "";
+            background: green;
+            border-radius: 2em;
+            width: 0.7em;
+            height: 0.7em;
+            animation-name: run;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; }
+  @keyframes run {
+    from {
+      left: 0em; }
+    to {
+      left: 7em; } }
+        .cloud-hosting .container .col-1 .feature {
+          width: 100%;
+          display: block; }
+          .cloud-hosting .container .col-1 .feature i {
+            display: inline-block;
+            border-radius: 0.4em;
+            width: 10em;
+            padding: 1em;
+            background-color: white;
+            margin: 0.5em;
+            transition: all 0.4s ease;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+            .cloud-hosting .container .col-1 .feature i span {
+              font-weight: normal;
+              margin-left: 0.5em; }
+            .cloud-hosting .container .col-1 .feature i:hover {
+              transform: translateY(-0.5em);
+              background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
+      .cloud-hosting .container .col-2 {
+        margin: auto;
+        width: 80vw;
+        height: 30em;
+        display: block;
+        position: static;
+        height: fit-content; }
+        .cloud-hosting .container .col-2 .main-pic {
+          position: relative;
+          width: 100%; }
+        .cloud-hosting .container .col-2 .circle {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          animation-timing-function: linear;
+          animation-name: circle;
+          animation-iteration-count: infinite;
+          animation-duration: 15s;
+          overflow: hidden; }
+  @keyframes circle {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(360deg); } } }
 
 .design-development {
   margin: auto;
@@ -577,6 +668,95 @@ nav.nav {
           transform: translateY(-0.5em);
           background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
 
+@media only screen and (max-width: 1000px) {
+  .design-development {
+    background-color: white;
+    margin: auto;
+    margin-top: 4em;
+    text-align: center;
+    width: 100vw;
+    display: block;
+    color: #666666;
+    overflow: hidden;
+    height: fit-content; }
+    .design-development .col-2 {
+      position: static;
+      align-items: center;
+      margin: 3em auto;
+      text-align: left;
+      width: 80vw;
+      display: block;
+      height: fit-content; }
+      .design-development .col-2 h3 {
+        font-size: 25px; }
+      .design-development .col-2 .bar {
+        width: 7em;
+        display: block;
+        position: relative;
+        padding: 0;
+        border: 0.1em #b4ffb4 solid;
+        border-radius: 1em; }
+        .design-development .col-2 .bar:before {
+          position: absolute;
+          top: -0.35em;
+          display: block;
+          content: "";
+          background: green;
+          border-radius: 2em;
+          width: 0.7em;
+          height: 0.7em;
+          animation-name: run;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+  @keyframes run {
+    from {
+      left: 0em; }
+    to {
+      left: 7em; } }
+      .design-development .col-2 .feature {
+        width: 100%;
+        display: block; }
+        .design-development .col-2 .feature i {
+          display: inline-block;
+          border-radius: 0.4em;
+          width: 10em;
+          padding: 1em;
+          background-color: white;
+          margin: 0.5em;
+          transition: all 0.4s ease;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+          .design-development .col-2 .feature i span {
+            font-weight: normal;
+            margin-left: 0.5em; }
+          .design-development .col-2 .feature i:hover {
+            transform: translateY(-0.5em);
+            background-image: linear-gradient(145deg, #88f7ff 0%, #19ffa7 100%); }
+    .design-development .col-1 {
+      margin: auto;
+      width: 80vw;
+      display: block;
+      position: static;
+      height: fit-content; }
+      .design-development .col-1 .main-pic {
+        position: relative;
+        width: 100%; }
+      .design-development .col-1 .circle {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation-timing-function: linear;
+        animation-name: circle;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        overflow: hidden; }
+  @keyframes circle {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(360deg); } } }
+
 .bar {
   width: 7em;
   display: block;
@@ -606,7 +786,7 @@ nav.nav {
 
 .our-feature {
   background-color: #eeeeee;
-  height: 50em;
+  height: fit-content;
   text-align: center; }
   .our-feature > h3 {
     padding-top: 2em;
@@ -620,6 +800,7 @@ nav.nav {
     margin: 2em auto; }
   .our-feature .cards {
     width: 80em;
+    height: fit-content;
     display: block;
     margin: auto;
     align-items: center; }
@@ -664,6 +845,24 @@ nav.nav {
           color: #666666; }
       .our-feature .cards .card:hover {
         transform: translateY(-1em); }
+
+@media only screen and (max-width: 1010px) {
+  .our-feature > p {
+    margin: auto;
+    text-align: center;
+    width: 80vw; }
+  .our-feature .cards {
+    width: 80vw;
+    display: block;
+    margin: auto;
+    align-items: center; }
+    .our-feature .cards .card {
+      width: 100%;
+      display: inline-flex;
+      margin: 1em;
+      padding: 1em;
+      background-color: white;
+      transition: .4s; } }
 
 .our-team {
   height: 50em;
