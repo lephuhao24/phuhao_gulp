@@ -2,12 +2,14 @@
     width: 100%;
     display: block;
     color: $text-color;
+    margin-bottom: 2em;
     .row-1 {
         display: block;
         margin: auto;
         height: 80vh;
         width: 80vw;
         position: relative;
+        overflow: hidden;
         .col-1 {
             position: absolute;
             top: 8rem;
@@ -19,6 +21,7 @@
                 font-size: 45px;
                 line-height: 4rem;
                 margin-bottom: 1.5rem;
+                
             }
             .ctn-btn {
                 margin-top: 2rem;

@@ -1,0 +1,126 @@
+.understand_users {
+    background-color: white !important;
+    .text {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        > h3 {
+            padding-top: 2em;
+            font-size: 30px;
+            font-weight: bold !important;
+        }
+        > p {
+            margin: auto;
+            text-align: center;
+        }
+        .bar {
+            margin:2em auto;
+        }
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2em;
+        .card {
+            width: 20%;
+            min-width: 10em;
+            border: 1px dashed $border-grey;
+            text-align: center;
+            height: 8em;
+            line-height: 1.5;
+            padding: 1.7em 0%;
+            margin: 1em;
+            box-sizing: border-box;
+            h3 {
+                font-size: 30px;
+                font-weight: bolder;
+                color: $btn;
+            }
+            p {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+
+.contact {
+    display: flex;
+    width: 35em;
+    height: 8em;
+    margin: 2em auto;
+    border: 1px dashed $border-grey;
+    border-radius: .3em;
+    justify-content: center;
+    position: relative;
+
+    .text {
+        position: absolute;
+        margin: 0 1em;
+        text-align: center;
+        top: 50%;
+        left: 1em;
+        transform: translateY(-50%);
+        h4 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    .ctn-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        .btn-support {
+            width: 6.5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1010px){
+    .understand_users {
+        .text {
+            width: 80%;
+        }
+    }
+    .contact {
+        width:90%;
+        display: flex;
+        height: 8em;
+        margin: auto;
+        border: 1px dashed $border-grey;
+        border-radius: .3em;
+        justify-content: center;
+        vertical-align: bottom;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .contact {
+        display: block;
+        .text {
+            display: block;
+            position: static;
+            margin: 0 1em;
+            text-align: center;
+            top: 50%;
+            left: 1em;
+            transform: translateY(0);
+            h4 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .ctn-btn {
+            display: block;
+            margin: 1.5em auto;
+            position: static;
+            transform: translateY(0);
+            .btn-support {
+                width: 6.5em;
+            }
+        }
+    }
+
+}

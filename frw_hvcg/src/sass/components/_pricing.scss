@@ -1,0 +1,79 @@
+.pricing {
+    background-color: $bg-pink;
+    .text {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        > h3 {
+            padding-top: 2em;
+            font-size: 30px;
+            font-weight: bold !important;
+        }
+        > p {
+            margin: auto;
+            text-align: center;
+        }
+        .bar {
+            margin:2em auto;
+        }
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card {
+            background-color: white;
+            border: 1px dashed $border-grey;
+            border-radius: .5em;
+            width: 30%;
+            text-align: center;
+            min-width: 16em;
+            margin: 2em auto;
+            overflow: hidden;
+            transition: all .3s ease;
+            .title {
+                font-weight: bolder;
+                margin: 0 auto;
+                padding: 1.5em 0;
+                display: block;
+                &:hover {
+                    background-image: $bg-gradient;
+                }
+            }
+            .price {
+                font-weight: bolder;
+                padding: 1.5em;
+                border-top: 1px dashed $border-grey; 
+                color: $btn;
+                font-size: 25px;
+                span {
+                    font-size: 15px;
+                }
+            }
+            ul {
+                li {
+                    font-weight: bolder;
+                    color: $text-color;
+                    font-size: 14px;
+                    text-decoration: none;
+                    list-style: none;
+                    border-top: 1px dashed $border-grey;
+                    line-height: 3em;
+                }
+            }
+            .ctn-btn {
+                width: 12em;
+                overflow: hidden;
+                align-items: center;
+                margin: 1em auto;
+                .btn-support {
+                    width: 8em;
+                    margin: auto;
+                }
+            }
+            &:hover {
+                transform: translateY(-.5em);
+            }
+        }
+    }
+}

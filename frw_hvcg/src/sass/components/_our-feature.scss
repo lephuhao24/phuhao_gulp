@@ -17,13 +17,13 @@
     }
 
     .cards {
-        width: 80em;
+        width: 100%;
         height: fit-content;
         display: block;
         margin: auto;
         align-items: center;
         .card {
-            width: 30em;
+            width: 30%;
             display: inline-flex;
             margin: 1em;
             padding: 1em;
@@ -94,7 +94,7 @@
             margin: auto;
             align-items: center;
             .card {
-                width: 100%;
+                width: 80%;
                 display: inline-flex;
                 margin: 1em;
                 padding: 1em;

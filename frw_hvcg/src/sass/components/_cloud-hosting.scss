@@ -1,219 +1,187 @@
 $barwidth: 7em;
 .cloud-hosting {
-background-color: $bg-grey;
-.container {
-    margin: auto;
-    margin-top: 4em;
-    text-align: center;
-    width: 80em;
-    height: 30rem;
-    position: relative;
-    display: block;
-    color: $text-color;
-    overflow: hidden;
-    .col-1 {
-    text-align: left;
-    position: absolute;
-    top: 3rem;
-    left: 3vw;
-    vertical-align: top;
-    width: 30vw;
-    display: inline-block;
-    h3 {
-        font-size: 25px;
-    }
-    .bar {
-        width: $barwidth;
-        display: block;
-        position: relative;
-        padding: 0;
-        border: 0.1em rgb(180, 255, 180) solid;
-        border-radius: 1em;
-        &:before {
-        position: absolute;
-        top: -0.35em;
-        display: block;
-        content: "";
-        background: green;
-        border-radius: 2em;
-        width: 0.7em;
-        height: 0.7em;
-        animation-name: run;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        @keyframes run {
-            from {
-            left: 0em;
-            }
-            to {
-            left: $barwidth;
-            }
-        }
-        }
-    }
-    .feature {
-        width: 100%;
-        display: block;
-        i {
-        display: inline-block;
-        border-radius: 0.4em;
-        width: 10em;
-        padding: 1em;
-        background-color: white;
-        margin: 0.5em;
-        transition: all 0.4s ease;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        span {
-            font-weight: normal;
-            margin-left: 0.5em;
-        }
-        &:hover {
-            transform: translateY(-0.5em);
-            background-image: $bg-gradient;
-        }
-        }
-    }
-    }
-    .col-2 {
-    position: absolute;
-    top: 3em;
-    right: 0;
-    width: 50%;
-    display: inline-block;
-    height: 100%;
-    .circle {
-        width: 30em;
-        position: absolute;
-        top: -3em;
-        left: 5em;
-        animation-timing-function: linear;
-        animation-name: circle;
-        animation-iteration-count: infinite;
-        animation-duration: 15s;
-        overflow: hidden;
-        @keyframes circle {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-        }
-    }
-    }
-}
-}
-
-@media only screen and (max-width: 1000px) {
-.cloud-hosting {
     background-color: $bg-grey;
+    width: 100%;
+    padding: 2em 0;
     .container {
-    margin: auto;
-    margin-top: 4em;
-    text-align: center;
-    width: 100vw;
-    display: block;
-    color: $text-color;
-    overflow: hidden;
-    height: fit-content;
-    .col-1 {
-        position: static;
-        align-items: center;
-        margin: 3em auto;
-        text-align: left;
-        width: 80vw;
-        display: block;
-        height: fit-content;
-        h3 {
-        font-size: 25px;
-        }
-        .bar {
-            width: $barwidth;
-            display: block;
-            position: relative;
-            padding: 0;
-            border: 0.1em rgb(180, 255, 180) solid;
-            border-radius: 1em;
-            &:before {
-                position: absolute;
-                top: -0.35em;
-                display: block;
-                content: "";
-                background: green;
-                border-radius: 2em;
-                width: 0.7em;
-                height: 0.7em;
-                animation-name: run;
-                animation-duration: 7s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                @keyframes run {
-                from {
-                    left: 0em;
-                }
-                to {
-                    left: $barwidth;
-                }
-                }
-            }
-        }
-        .feature {
-            width: 100%;
-            display: block;
-            i {
-                display: inline-block;
-                border-radius: 0.4em;
-                width: 10em;
-                padding: 1em;
-                background-color: white;
-                margin: 0.5em;
-                transition: all 0.4s ease;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-                span {
-                font-weight: normal;
-                margin-left: 0.5em;
-                }
-                &:hover {
-                transform: translateY(-0.5em);
-                background-image: $bg-gradient;
-                }
-            }
-        }
-    }
-    .col-2 {
         margin: auto;
-        width: 80vw;
-        height: 30em;
-        display: block;
-        position: static;
-        height: fit-content;
-        .main-pic {
-            position: relative;
-            width: 100%;
-        }
-        .circle {
-            position: absolute;
-            width: 100%;
-            top:0;
-            left: 0;
-
-            
-            animation-timing-function: linear;
-            animation-name: circle;
-            animation-iteration-count: infinite;
-            animation-duration: 15s;
-            overflow: hidden;
-            @keyframes circle {
-                from {
-                transform: rotate(0deg);
+        text-align: center;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        color: $text-color;
+        overflow: hidden;
+        .col-1 {
+            width: 40%;
+            min-width: 20em;
+            text-align: left;
+            display: inline-block;
+            h3 {
+                font-size: 25px;
+            }
+            .feature {
+                width: 90%;
+                display: block;
+                i {
+                    display: inline-block;
+                    border-radius: 0.4em;
+                    width: 10em;
+                    padding: 1em;
+                    background-color: white;
+                    margin: 0.5em;
+                    transition: all 0.4s ease;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                    span {
+                        font-weight: normal;
+                        margin-left: 0.5em;
+                    }
+                    &:hover {
+                        transform: translateY(-0.5em);
+                        background-image: $bg-gradient;
+                    }
                 }
-                to {
-                transform: rotate(360deg);
+            }
+        }
+        .col-2 {
+            width: 40%;
+            min-width: 30em;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            .circle {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                animation-timing-function: linear;
+                animation-name: circle;
+                animation-iteration-count: infinite;
+                animation-duration: 15s;
+                overflow: hidden;
+                @keyframes circle {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
                 }
             }
         }
     }
-    }
 }
-}
+
+// @media only screen and (max-width: 1000px) {
+//     .cloud-hosting {
+//         background-color: $bg-grey;
+//         .container {
+//             margin: auto;
+//             margin-top: 4em;
+//             text-align: center;
+//             width: 100%;
+//             display: block;
+//             color: $text-color;
+//             overflow: hidden;
+//             height: fit-content;
+//             .col-1 {
+//                 position: static;
+//                 align-items: center;
+//                 margin: 3em auto;
+//                 text-align: left;
+//                 width: 80vw;
+//                 display: block;
+//                 height: fit-content;
+//                 h3 {
+//                 font-size: 25px;
+//                 }
+//                 .bar {
+//                     width: $barwidth;
+//                     display: block;
+//                     position: relative;
+//                     padding: 0;
+//                     border: 0.1em rgb(180, 255, 180) solid;
+//                     border-radius: 1em;
+//                     &:before {
+//                         position: absolute;
+//                         top: -0.35em;
+//                         display: block;
+//                         content: "";
+//                         background: green;
+//                         border-radius: 2em;
+//                         width: 0.7em;
+//                         height: 0.7em;
+//                         animation-name: run;
+//                         animation-duration: 7s;
+//                         animation-iteration-count: infinite;
+//                         animation-timing-function: linear;
+//                         @keyframes run {
+//                         from {
+//                             left: 0em;
+//                         }
+//                         to {
+//                             left: $barwidth;
+//                         }
+//                         }
+//                     }
+//                 }
+//                 .feature {
+//                     width: 100%;
+//                     display: block;
+//                     i {
+//                         display: inline-block;
+//                         border-radius: 0.4em;
+//                         width: 10em;
+//                         padding: 1em;
+//                         background-color: white;
+//                         margin: 0.5em;
+//                         transition: all 0.4s ease;
+//                         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+//                         span {
+//                         font-weight: normal;
+//                         margin-left: 0.5em;
+//                         }
+//                         &:hover {
+//                         transform: translateY(-0.5em);
+//                         background-image: $bg-gradient;
+//                         }
+//                     }
+//                 }
+//             }
+//             .col-2 {
+//                 margin: auto;
+//                 width: 80vw;
+//                 height: 30em;
+//                 display: block;
+//                 position: static;
+//                 height: fit-content;
+//                 .main-pic {
+//                     position: relative;
+//                     width: 100%;
+//                 }
+//                 .circle {
+//                     position: absolute;
+//                     width: 100%;
+//                     top:0;
+//                     left: 0;
+
+                    
+//                     animation-timing-function: linear;
+//                     animation-name: circle;
+//                     animation-iteration-count: infinite;
+//                     animation-duration: 15s;
+//                     overflow: hidden;
+//                     @keyframes circle {
+//                         from {
+//                         transform: rotate(0deg);
+//                         }
+//                         to {
+//                         transform: rotate(360deg);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,72 @@
+.user-saying {
+    background-color: $bg-pink;
+    .text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        > h3 {
+            padding-top: 2em;
+            font-size: 30px;
+            font-weight: bold !important;
+        }
+        > p {
+            margin: auto;
+            text-align: center;
+        }
+        .bar {
+            margin:2em auto;
+        }
+    }
+    .slider-for {
+        .card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .thumbnail {
+                width: 8em;
+                height: 8em;
+                margin: 1em;
+                box-sizing: border-box;
+                border-radius: 5em;
+                border: 3px solid $btn;
+                transition: all .3s ease;
+            }
+            .text-slide {
+                width: 45em;
+                margin: 1em;
+                color: $text-color;
+                .name {
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                .job {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+    .slider-nav {
+        .card {
+            .thumbnail {
+                margin: 2em auto;
+                border-radius: 5em;
+                border: 3px solid $bg-grey;
+                transition: all .3s ease;
+                width: 5em;
+                &:hover {
+                    border: 3px solid $btn;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .user-saying {
+        .slider-for {
+            .card {
+                text-align: center;
+            }
+        }
+    }
+}
