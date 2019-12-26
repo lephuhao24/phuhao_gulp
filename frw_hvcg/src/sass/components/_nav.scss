@@ -49,6 +49,7 @@
                     border-bottom: 1px solid darkgray;
                     font-size: 45px;
                     width: 8em;
+                    padding: 0 1em;
                     a.link-page {
                         font-size: inherit;
                         color: black;
@@ -68,6 +69,7 @@
                         li {
                             font-size: inherit;
                             z-index: 2;
+                            padding: 0;
                         }
                     }
                     &.active {

@@ -3,12 +3,16 @@
 $(document).ready(function () {
   $('.icon').click(function () {
     $('ul.menu-btn').toggleClass('active');
+    $(this).children('i').toggleClass('fa-times');
   });
   $('.link-page').click(function () {
+    // $(this).children('i:first-child').toggleClass('fa-caret-up');
     if ($(this).parent().hasClass('active')) {
       $(this).parent().removeClass('active');
+      $(this).children('i:first-child').removeClass('fa-caret-up');
     } else {
       $(this).parent().parent().children('li').removeClass('active');
+      $(this).children('i:first-child').addClass('fa-caret-up');
       $(this).parent().addClass('active');
     }
   });
